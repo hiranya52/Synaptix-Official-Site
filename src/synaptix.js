@@ -287,6 +287,37 @@ function renderHTML() {
 }
 
 function generateTeamMembers() {
+
+  const photos = [
+    './src/img/Ryan.png',
+    './src/img/Hiranya.png',
+    './src/img/Lagesha.png',
+    './src/img/Kaveen.png',
+    './src/img/Dulani.png',
+    './src/img/Chethiya.png',
+    './src/img/Pesandu.png',
+    './src/img/Saranga.png',
+    './src/img/Hasan.png',
+    './src/img/Chethana.png',
+    './src/img/Manesh.png',
+    './src/img/Tashan.png'
+  ];
+
+  const names = [
+    'Buddeema Ryan',
+    'Hiranya Mendis',
+    'Lagensha Rupasinghe',
+    'Kaveen Peiris',
+    'Dulani Piusha',
+    'Chethiya Pradeeptha',
+    'Pesandu Jayasinghe',
+    'Saranga Kalhari',
+    'Hasan Ifthikar',
+    'Chethana Perera',
+    'Manesh Edirisinghe',
+    'Tashan Appuhami'
+  ];
+
   const roles = [
     'Chief Executive Officer',
     'Chief Technology Officer',
@@ -317,34 +348,21 @@ function generateTeamMembers() {
     'Turning data into actionable insights.'
   ];
 
-  const photos = [
-    './src/img/Ryan.png',
-    './src/img/Hiranya.png',
-    './src/img/Lagesha.png',
-    './src/img/Kaveen.png',
-    './src/img/Dulani.png',
-    './src/img/Chethiya.png',
-    './src/img/Pesandu.png',
-    './src/img/Saranga.png',
-    './src/img/Chethana.png',
-    './src/img/Hasan.png',
-    './src/img/Manesh.png',
-    './src/img/Tashan.png'
-  ];
 
   return roles.map((role, index) => `
     <div class="team-member">
       <div class="member-image">
-        <img src="${photos[index]}" alt="Team Member ${index + 1} class="member-image img">
+        <img src="${photos[index]}" alt="${names[index]}" class="member-image img">
       </div>
       <div class="member-info">
-        <h3 class="member-name">Team Member ${index + 1}</h3>
+        <h3 class="member-name">${names[index]}</h3>
         <p class="member-role">${role}</p>
         <p class="member-bio">${bios[index]}</p>
       </div>
     </div>
   `).join('');
 }
+
 
 function hideLoader() {
   const loader = document.querySelector('.loading');
