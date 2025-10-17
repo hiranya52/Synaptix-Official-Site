@@ -59,16 +59,27 @@ nav.scrolled {
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.nav-logo {
+  height: 45px;
+  width: auto;
+}
+
+.logo-text {
   font-size: 1.8rem;
   font-weight: 700;
   color: var(--gold);
   font-family: 'Space Grotesk', sans-serif;
   letter-spacing: -0.02em;
-  position: relative;
-  z-index: 1;
 }
 
-.logo span {
+.logo-text span {
   color: #ffffff;
 }
 

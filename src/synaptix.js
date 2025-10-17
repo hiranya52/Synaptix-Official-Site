@@ -33,7 +33,7 @@ function renderHTML() {
     <nav id="navbar">
       <div class="nav-content">
         <div class="logo">
-          <img src="./src/img/Synaptix.png" alt="Synaptix Logo" class="nav-logo">
+          <img src="./src/img/logo.png" alt="Synaptix Logo" class="nav-logo">
           <span class="logo-text">SYNAP<span>TIX</span></span>
         </div>
         <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
