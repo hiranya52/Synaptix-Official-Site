@@ -319,33 +319,33 @@ function generateTeamMembers() {
   ];
 
   const roles = [
-    'Chief Executive Officer',
-    'Chief Technology Officer',
-    'Lead Developer',
-    'Senior Developer',
-    'Full Stack Developer',
-    'Frontend Specialist',
-    'Backend Engineer',
-    'DevOps Engineer',
-    'UI/UX Designer',
-    'Product Manager',
-    'Security Specialist',
-    'Data Scientist'
+    'Team Leader',
+    'Project Manager',
+    'Buisness Analyst',
+    'Social Media Manager',
+    'Software Developer',
+    'Software Developer',
+    'Software Developer',
+    'Software Developer',
+    'Software Developer',
+    'Software Developer',
+    'Software Developer',
+    'Software Developer'
   ];
 
   const bios = [
-    'Visionary leader driving innovation and growth.',
-    'Technology expert with a passion for excellence.',
-    'Crafting elegant solutions to complex problems.',
-    'Building scalable applications with precision.',
-    'Full stack wizard bringing ideas to life.',
-    'Creating beautiful, intuitive user experiences.',
-    'Architecting robust backend systems.',
-    'Ensuring seamless deployment and operations.',
-    'Designing interfaces that users love.',
-    'Transforming visions into actionable plans.',
-    'Protecting digital assets with expertise.',
-    'Turning data into actionable insights.'
+    'Inspiring leader guiding the team to success.',
+    'Driving project success through smart planning.',
+    'Bridging business needs with smart solutions.',
+    'Crafting content that inspires and engages.',
+    'Building reliable software with creativity and care.',
+    'Building reliable software with creativity and care.',
+    'Building reliable software with creativity and care.',
+    'Building reliable software with creativity and care.',
+    'Building reliable software with creativity and care.',
+    'Building reliable software with creativity and care.',
+    'Building reliable software with creativity and care.',
+    'Building reliable software with creativity and care.'
   ];
 
 
