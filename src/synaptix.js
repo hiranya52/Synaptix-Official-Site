@@ -23,14 +23,19 @@ function renderHTML() {
 
   app.innerHTML = `
     <div class="loading">
-      <div class="loader"></div>
+      <div class="loader">
+        <span class="synaptix-loader">SYNAP<span class="highlight">TIX</span></span>
+      </div>
     </div>
 
     <div class="scroll-indicator" id="scrollIndicator"></div>
 
     <nav id="navbar">
       <div class="nav-content">
-        <div class="logo">SYNAP<span>TIX</span></div>
+        <div class="logo">
+          <img src="./src/img/Synaptix.png" alt="Synaptix Logo" class="nav-logo">
+          <span class="logo-text">SYNAP<span>TIX</span></span>
+        </div>
         <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
         <ul class="nav-links" id="navLinks">
           <li><a href="#home">Home</a></li>
@@ -86,12 +91,8 @@ function renderHTML() {
             <div class="stat-label">Team Members</div>
           </div>
           <div class="stat-card">
-            <div class="stat-number" data-target="100">0</div>
+            <div class="stat-number" data-target="1">0</div>
             <div class="stat-label">Projects Delivered</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number" data-target="50">0</div>
-            <div class="stat-label">Happy Clients</div>
           </div>
           <div class="stat-card">
             <div class="stat-number" data-target="99">0</div>
@@ -279,7 +280,7 @@ function renderHTML() {
           </div>
         </div>
         <div class="footer-bottom">
-          <p>&copy; 2024 <span>Synaptix</span>. All rights reserved. Made with passion and innovation.</p>
+          <p>&copy; 2025 <span>Synaptix</span>. All rights reserved. Made with passion and innovation.</p>
         </div>
       </div>
     </footer>
@@ -368,7 +369,7 @@ function hideLoader() {
   const loader = document.querySelector('.loading');
   setTimeout(() => {
     loader.classList.add('hidden');
-  }, 1000);
+  }, 3000);
 }
 
 function initNavigation() {

@@ -972,12 +972,27 @@ footer {
 }
 
 .loader {
-  width: 80px;
-  height: 80px;
-  border: 4px solid rgba(241, 184, 18, 0.2);
-  border-top: 4px solid var(--gold);
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.synaptix-loader {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.synaptix-loader .highlight {
+  color: var(--gold);
+}
+
+@keyframes pulse {
+  0% { opacity: 0.5; transform: scale(0.95); }
+  50% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0.5; transform: scale(0.95); }
 }
 
 @keyframes spin {
