@@ -985,3 +985,12 @@ footer {
     transform: rotate(360deg);
   }
 }
+
+.member-image img {
+  width: 260px;        /* adjust this value to make it smaller or larger */
+  height: 260px;
+  border-radius: 50%;  /* makes the image circular */
+  object-fit: cover;   /* keeps the image nicely cropped */
+  border: 2px solid #ddd; /* optional border */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* optional soft shadow */
+}

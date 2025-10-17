@@ -317,11 +317,26 @@ function generateTeamMembers() {
     'Turning data into actionable insights.'
   ];
 
-  const icons = ['👨‍💼', '👩‍💻', '👨‍🔧', '👩‍🎨', '👨‍🚀', '👩‍🔬', '👨‍💻', '👩‍💼', '👨‍🎨', '👩‍🚀', '👨‍🔬', '👩‍🔧'];
+  const photos = [
+    './src/img/Ryan.png',
+    './src/img/Hiranya.png',
+    './src/img/Lagesha.png',
+    './src/img/Kaveen.png',
+    './src/img/Dulani.png',
+    './src/img/Chethiya.png',
+    './src/img/Pesandu.png',
+    './src/img/Saranga.png',
+    './src/img/Chethana.png',
+    './src/img/Hasan.png',
+    './src/img/Manesh.png',
+    './src/img/Tashan.png'
+  ];
 
   return roles.map((role, index) => `
     <div class="team-member">
-      <div class="member-image">${icons[index]}</div>
+      <div class="member-image">
+        <img src="${photos[index]}" alt="Team Member ${index + 1} class="member-image img">
+      </div>
       <div class="member-info">
         <h3 class="member-name">Team Member ${index + 1}</h3>
         <p class="member-role">${role}</p>
