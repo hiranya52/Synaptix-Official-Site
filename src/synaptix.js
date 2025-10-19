@@ -13,6 +13,7 @@ function initWebsite() {
     initScrollEffects();
     initParticles();
     initCounterAnimation();
+    initFormHandler();
     hideLoader();
   }, 100);
 }
@@ -55,12 +56,10 @@ function renderHTML() {
       </div>
       <div class="hero-content">
         <h1 class="hero-title">
-          Welcome to <span class="highlight">SYNAPTIX</span>
+          One Network <br> Endless Potential <span class="highlight">SYNAPTIX</span>
         </h1>
-        <p class="hero-slogan">One Network, Endless Potential</p>
         <p class="hero-description">
-          We are a cutting-edge software organization dedicated to building innovative solutions
-          that connect, empower, and transform businesses in the digital age.
+          Innovative software solutions that connect, empower, and transform businesses in the digital age.
         </p>
         <div class="hero-buttons">
           <a href="#services" class="btn btn-primary">
@@ -154,72 +153,6 @@ function renderHTML() {
       </div>
     </section>
 
-    <section class="field-visits" id="field-visits">
-      <div class="container">
-        <div class="section-header">
-          <p class="section-subtitle">Field Visits</p>
-          <h2 class="section-title">Our Project Journey</h2>
-          <p class="section-description">
-            Documenting our field research and project implementation progress
-          </p>
-        </div>
-        
-        <div class="field-visit-day">
-          <h3 class="day-title">Research Phase I: Discovery & Analysis</h3>
-          <div class="field-visits-grid">
-            <div class="field-visit-card">
-              <img src="./src/img/fieldVisitDy1-01.png" alt="Field Visit Day 1 - Image 1" class="field-visit-image">
-              <div class="field-visit-overlay">
-                <h3>Environmental Study</h3>
-                <p>Exploring the ecosystem and contextual dynamics</p>
-              </div>
-            </div>
-            <div class="field-visit-card">
-              <img src="./src/img/fieldVisitDy1-02.png" alt="Field Visit Day 1 - Image 2" class="field-visit-image">
-              <div class="field-visit-overlay">
-                <h3>Collaborative Insights</h3>
-                <p>Team brainstorming and knowledge sharing</p>
-              </div>
-            </div>
-            <div class="field-visit-card">
-              <img src="./src/img/fieldVisitDy1-03.png" alt="Field Visit Day 1 - Image 3" class="field-visit-image">
-              <div class="field-visit-overlay">
-                <h3>Pattern Recognition</h3>
-                <p>Identifying key trends and opportunities</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="field-visit-day">
-          <h3 class="day-title">Research Phase II: Deep Dive & Innovation</h3>
-          <div class="field-visits-grid">
-            <div class="field-visit-card">
-              <img src="./src/img/fieldVisitDy2-01.png" alt="Field Visit Day 2 - Image 1" class="field-visit-image">
-              <div class="field-visit-overlay">
-                <h3>Solution Mapping</h3>
-                <p>Crafting innovative approaches to challenges</p>
-              </div>
-            </div>
-            <div class="field-visit-card">
-              <img src="./src/img/fieldVisitDy2-02.png" alt="Field Visit Day 2 - Image 2" class="field-visit-image">
-              <div class="field-visit-overlay">
-                <h3>Concept Validation</h3>
-                <p>Testing hypotheses and refining ideas</p>
-              </div>
-            </div>
-            <div class="field-visit-card">
-              <img src="./src/img/fieldVisitDy2-03.png" alt="Field Visit Day 2 - Image 3" class="field-visit-image">
-              <div class="field-visit-overlay">
-                <h3>Future Vision</h3>
-                <p>Mapping the path forward with insights</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section class="contact" id="contact">
       <div class="container">
         <div class="section-header">
@@ -230,7 +163,51 @@ function renderHTML() {
           </p>
         </div>
         <div class="contact-content">
-          <!-- Contact content removed -->
+          <div class="contact-info">
+            <h3>Connect With Us</h3>
+            <p>
+              Whether you have a project in mind or just want to chat about possibilities,
+              we're here to help turn your vision into reality.
+            </p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon">📧</div>
+                <div class="contact-text">
+                  <h4>Email</h4>
+                  <p>hello@synaptix.com</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">📞</div>
+                <div class="contact-text">
+                  <h4>Phone</h4>
+                  <p>+1 (555) 123-4567</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <div class="contact-text">
+                  <h4>Location</h4>
+                  <p>San Francisco, CA 94102</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
         </div>
       </div>
     </section>
@@ -495,4 +472,26 @@ function initCounterAnimation() {
   }
 }
 
+function initFormHandler() {
+  const form = document.getElementById('contactForm');
 
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const submitBtn = form.querySelector('.submit-btn');
+    const originalText = submitBtn.textContent;
+
+    submitBtn.textContent = 'Sending...';
+    submitBtn.disabled = true;
+
+    setTimeout(() => {
+      submitBtn.textContent = '✓ Message Sent!';
+      form.reset();
+
+      setTimeout(() => {
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+      }, 3000);
+    }, 1500);
+  });
+}
