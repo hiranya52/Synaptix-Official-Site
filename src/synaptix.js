@@ -419,31 +419,14 @@ function generateTeamMembers() {
     'Software Developer'
   ];
 
-  const bios = [
-    'Inspiring leader guiding the team to success.',
-    'Driving project success through smart planning.',
-    'Bridging business needs with smart solutions.',
-    'Crafting content that inspires and engages.',
-    'Building reliable software with creativity and care.',
-    'Building reliable software with creativity and care.',
-    'Building reliable software with creativity and care.',
-    'Building reliable software with creativity and care.',
-    'Building reliable software with creativity and care.',
-    'Building reliable software with creativity and care.',
-    'Building reliable software with creativity and care.',
-    'Building reliable software with creativity and care.'
-  ];
-
-
   return roles.map((role, index) => `
     <div class="team-member">
-      <div class="member-image">
+      <div class="member-image" style="text-align: center;">
         <img src="${photos[index]}" alt="${names[index]}" class="member-image img">
       </div>
-      <div class="member-info">
+      <div class="member-info" style="text-align: center;">
         <h3 class="member-name">${names[index]}</h3>
         <p class="member-role">${role}</p>
-        <p class="member-bio">${bios[index]}</p>
       </div>
     </div>
   `).join('');
