@@ -111,24 +111,41 @@ function renderHTML() {
         </div>
         <div class="services-grid">
           <div class="service-card">
-            <div class="service-icon">⚡</div>
-            <h3 class="service-title">Web Development</h3>
+            <div class="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 18l6-6-6-6"/>
+                <path d="M8 6l-6 6 6 6"/>
+                <path d="M10 4l4 16"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Custom Software Development</h3>
             <p class="service-description">
               Build powerful, scalable web applications with modern technologies and best practices
               that deliver exceptional user experiences.
             </p>
           </div>
           <div class="service-card">
-            <div class="service-icon">📱</div>
-            <h3 class="service-title">Mobile Solutions</h3>
+            <div class="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Automation & Industry Solutions</h3>
             <p class="service-description">
               Native and cross-platform mobile applications that engage users and drive business
               growth across all devices.
             </p>
           </div>
           <div class="service-card">
-            <div class="service-icon">☁️</div>
-            <h3 class="service-title">Cloud Infrastructure</h3>
+            <div class="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="7" height="7"/>
+                <rect x="14" y="3" width="7" height="7"/>
+                <rect x="14" y="14" width="7" height="7"/>
+                <rect x="3" y="14" width="7" height="7"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Web & Mobile App Development</h3>
             <p class="service-description">
               Secure, scalable cloud solutions that ensure your applications perform flawlessly
               with maximum uptime and reliability.
@@ -149,6 +166,72 @@ function renderHTML() {
         </div>
         <div class="team-grid">
           ${generateTeamMembers()}
+        </div>
+      </div>
+    </section>
+
+    <section class="field-visits" id="field-visits">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-subtitle">Field Visits</p>
+          <h2 class="section-title">Our Project Journey</h2>
+          <p class="section-description">
+            Documenting our field research and project implementation progress
+          </p>
+        </div>
+        
+        <div class="field-visit-day">
+          <h3 class="day-title">Research Phase I: Discovery & Analysis</h3>
+          <div class="field-visits-grid">
+            <div class="field-visit-card">
+              <img src="./src/img/fieldVisitDy1-01.png" alt="Field Visit Day 1 - Image 1" class="field-visit-image">
+              <div class="field-visit-overlay">
+                <h3>Environmental Study</h3>
+                <p>Exploring the ecosystem and contextual dynamics</p>
+              </div>
+            </div>
+            <div class="field-visit-card">
+              <img src="./src/img/fieldVisitDy1-02.png" alt="Field Visit Day 1 - Image 2" class="field-visit-image">
+              <div class="field-visit-overlay">
+                <h3>Collaborative Insights</h3>
+                <p>Team brainstorming and knowledge sharing</p>
+              </div>
+            </div>
+            <div class="field-visit-card">
+              <img src="./src/img/fieldVisitDy1-03.png" alt="Field Visit Day 1 - Image 3" class="field-visit-image">
+              <div class="field-visit-overlay">
+                <h3>Pattern Recognition</h3>
+                <p>Identifying key trends and opportunities</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="field-visit-day">
+          <h3 class="day-title">Research Phase II: Deep Dive & Innovation</h3>
+          <div class="field-visits-grid">
+            <div class="field-visit-card">
+              <img src="./src/img/fieldVisitDy2-01.png" alt="Field Visit Day 2 - Image 1" class="field-visit-image">
+              <div class="field-visit-overlay">
+                <h3>Solution Mapping</h3>
+                <p>Crafting innovative approaches to challenges</p>
+              </div>
+            </div>
+            <div class="field-visit-card">
+              <img src="./src/img/fieldVisitDy2-02.png" alt="Field Visit Day 2 - Image 2" class="field-visit-image">
+              <div class="field-visit-overlay">
+                <h3>Concept Validation</h3>
+                <p>Testing hypotheses and refining ideas</p>
+              </div>
+            </div>
+            <div class="field-visit-card">
+              <img src="./src/img/fieldVisitDy2-03.png" alt="Field Visit Day 2 - Image 3" class="field-visit-image">
+              <div class="field-visit-overlay">
+                <h3>Future Vision</h3>
+                <p>Mapping the path forward with insights</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -188,7 +271,7 @@ function renderHTML() {
                 <div class="contact-icon">📍</div>
                 <div class="contact-text">
                   <h4>Location</h4>
-                  <p>San Francisco, CA 94102</p>
+                  <p>223A Galle Road, Panadura 12500</p>
                 </div>
               </div>
             </div>
@@ -212,49 +295,63 @@ function renderHTML() {
       </div>
     </section>
 
-    <footer>
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-brand">
-            <h3>SYNAPTIX</h3>
-            <p>One Network, Endless Potential. Building the future of software, one connection at a time.</p>
-            <div class="social-links">
-              <a href="#" class="social-link">𝕏</a>
-              <a href="#" class="social-link">💼</a>
-              <a href="#" class="social-link">📘</a>
-              <a href="#" class="social-link">📷</a>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-brand">
+              <h3 class="footer-logo">SYNAPTIX</h3>
+              <p class="brand-description">Engineering the digital infrastructure of tomorrow.</p>
+              <div class="social-links">
+                <a href="mailto:info@synaptix.com" aria-label="Email">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                  </svg>
+                </a>
+                <a href="https://www.linkedin.com/company/synaptix-official/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </a>
+                <a href="https://github.com/Synaptix-One-network-endless-potential" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="footer-links">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#our-values">Our Values</a></li>
+                <li><a href="#careers">Careers</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-links">
+              <h4>Services</h4>
+              <ul>
+                <li><a href="#custom-software">Custom Software</a></li>
+                <li><a href="#automation">Automation</a></li>
+                <li><a href="#mobile-apps">Mobile Apps</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-links">
+              <h4>Connect</h4>
+              <ul>
+                <li><a href="#get-quote">Get a Quote</a></li>
+                <li><a href="#press-kit">Press Kit</a></li>
+                <li><a href="mailto:info@synaptix.com">info@synaptix.com</a></li>
+              </ul>
             </div>
           </div>
-          <div class="footer-links">
-            <h4>Company</h4>
-            <ul>
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#team">Our Team</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
+          
+          <div class="footer-bottom">
+            <p class="copyright">&copy; 2024 SYNAPTIX. All Rights Reserved. | Designed with Unity and Innovation.</p>
           </div>
-          <div class="footer-links">
-            <h4>Services</h4>
-            <ul>
-              <li><a href="#services">Web Development</a></li>
-              <li><a href="#services">Mobile Apps</a></li>
-              <li><a href="#services">Cloud Solutions</a></li>
-              <li><a href="#services">Cybersecurity</a></li>
-            </ul>
-          </div>
-          <div class="footer-links">
-            <h4>Legal</h4>
-            <ul>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms of Service</a></li>
-              <li><a href="#">Cookie Policy</a></li>
-              <li><a href="#">GDPR</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <p>&copy; 2025 <span>Synaptix</span>. All rights reserved. Made with passion and innovation.</p>
         </div>
       </div>
     </footer>
