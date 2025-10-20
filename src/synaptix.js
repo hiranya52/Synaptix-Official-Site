@@ -34,7 +34,7 @@ function renderHTML() {
     <nav id="navbar">
       <div class="nav-content">
         <div class="logo">
-          <img src="./src/img/logo.png" alt="Synaptix Logo" class="nav-logo">
+          <img src="https://res.cloudinary.com/dtol8lk5b/image/upload/v1760966396/logo_dph2dv.png" alt="Synaptix Logo" class="nav-logo">
           <span class="logo-text">SYNAP<span>TIX</span></span>
         </div>
         <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
@@ -185,21 +185,21 @@ function renderHTML() {
           <h3 class="day-title">Research Phase I: Discovery & Analysis</h3>
           <div class="field-visits-grid">
             <div class="field-visit-card">
-              <img src="./src/img/fieldVisitDy1-01.png" alt="Field Visit Day 1 - Image 1" class="field-visit-image">
+              <img src="https://res.cloudinary.com/dtol8lk5b/image/upload/v1760966358/fieldVisitDy1-01_ma6thg.png" alt="Field Visit Day 1 - Image 1" class="field-visit-image">
               <div class="field-visit-overlay">
                 <h3>Environmental Study</h3>
                 <p>Exploring the ecosystem and contextual dynamics</p>
               </div>
             </div>
             <div class="field-visit-card">
-              <img src="./src/img/fieldVisitDy1-02.png" alt="Field Visit Day 1 - Image 2" class="field-visit-image">
+              <img src="https://res.cloudinary.com/dtol8lk5b/image/upload/v1760966640/fieldVisitDy1-02_acgon5.png" alt="Field Visit Day 1 - Image 2" class="field-visit-image">
               <div class="field-visit-overlay">
                 <h3>Collaborative Insights</h3>
                 <p>Team brainstorming and knowledge sharing</p>
               </div>
             </div>
             <div class="field-visit-card">
-              <img src="./src/img/fieldVisitDy1-03.png" alt="Field Visit Day 1 - Image 3" class="field-visit-image">
+              <img src="https://res.cloudinary.com/dtol8lk5b/image/upload/v1760966632/fieldVisitDy1-03_popa4f.png" alt="Field Visit Day 1 - Image 3" class="field-visit-image">
               <div class="field-visit-overlay">
                 <h3>Pattern Recognition</h3>
                 <p>Identifying key trends and opportunities</p>
@@ -212,21 +212,21 @@ function renderHTML() {
           <h3 class="day-title">Research Phase II: Deep Dive & Innovation</h3>
           <div class="field-visits-grid">
             <div class="field-visit-card">
-              <img src="./src/img/fieldVisitDy2-01.png" alt="Field Visit Day 2 - Image 1" class="field-visit-image">
+              <img src="https://res.cloudinary.com/dtol8lk5b/image/upload/v1760966337/fieldVisitDy2-01_maspnx.png" alt="Field Visit Day 2 - Image 1" class="field-visit-image">
               <div class="field-visit-overlay">
                 <h3>Solution Mapping</h3>
                 <p>Crafting innovative approaches to challenges</p>
               </div>
             </div>
             <div class="field-visit-card">
-              <img src="./src/img/fieldVisitDy2-02.png" alt="Field Visit Day 2 - Image 2" class="field-visit-image">
+              <img src="https://res.cloudinary.com/dtol8lk5b/image/upload/v1760966429/fieldVisitDy2-02_gycg9g.png" alt="Field Visit Day 2 - Image 2" class="field-visit-image">
               <div class="field-visit-overlay">
                 <h3>Concept Validation</h3>
                 <p>Testing hypotheses and refining ideas</p>
               </div>
             </div>
             <div class="field-visit-card">
-              <img src="./src/img/fieldVisitDy2-03.png" alt="Field Visit Day 2 - Image 3" class="field-visit-image">
+              <img src="https://res.cloudinary.com/dtol8lk5b/image/upload/v1760966340/fieldVisitDy2-03_hih68h.png" alt="Field Visit Day 2 - Image 3" class="field-visit-image">
               <div class="field-visit-overlay">
                 <h3>Future Vision</h3>
                 <p>Mapping the path forward with insights</p>
@@ -377,8 +377,8 @@ function renderHTML() {
           <div class="powered-by">
             <h4>POWERED BY</h4>
             <div class="powered-by-logos">
-              <img src="./src/img/icetLogo.png" alt="ICET Logo">
-              <img src="./src/img/industryMindsLogo.png" alt="Industry Minds Logo">
+              <img src="https://res.cloudinary.com/dtol8lk5b/image/upload/v1760966400/icetLogo_o58mvf.png" alt="ICET Logo">
+              <img src="https://res.cloudinary.com/dtol8lk5b/image/upload/v1760966370/industryMindsLogo_jxgrre.png" alt="Industry Minds Logo">
             </div>
           </div>
           
@@ -394,18 +394,18 @@ function renderHTML() {
 function generateTeamMembers() {
 
   const photos = [
-    './src/img/Ryan.png',
-    './src/img/Hiranya.png',
-    './src/img/Lagesha.png',
-    './src/img/Kaveen.png',
-    './src/img/Dulani.png',
-    './src/img/Chethiya.png',
-    './src/img/Pesandu.png',
-    './src/img/Saranga.png',
-    './src/img/Hasan.png',
-    './src/img/Chethana.png',
-    './src/img/Manesh.png',
-    './src/img/Tashan.png'
+    'https://res.cloudinary.com/dtol8lk5b/image/upload/v1760966446/Ryan_n5shyq.png',
+    'https://res.cloudinary.com/dtol8lk5b/image/upload/v1760966368/Hiranya_sdz9wj.png',
+    'https://res.cloudinary.com/dtol8lk5b/image/upload/v1760966387/Lagesha_r1mxz8.png',
+    'https://res.cloudinary.com/dtol8lk5b/image/upload/v1760966377/Kaveen_ltfgtw.png',
+    'https://res.cloudinary.com/dtol8lk5b/image/upload/v1760966301/Dulani_jcg6qo.png',
+    'https://res.cloudinary.com/dtol8lk5b/image/upload/v1760966646/Chethiya_rqanbw.png',
+    'https://res.cloudinary.com/dtol8lk5b/image/upload/v1760966423/Pesandu_g8bqzc.png',
+    'https://res.cloudinary.com/dtol8lk5b/image/upload/v1760966523/Saranga_gew8bv.png',
+    'https://res.cloudinary.com/dtol8lk5b/image/upload/v1760966427/Hasan_admr66.png',
+    'https://res.cloudinary.com/dtol8lk5b/image/upload/v1760966289/Chethana_ve9t3r.png',
+    'https://res.cloudinary.com/dtol8lk5b/image/upload/v1760966445/Manesh_gyltig.png',
+    'https://res.cloudinary.com/dtol8lk5b/image/upload/v1760966491/Tashan_iqw3xg.png'
   ];
 
   const names = [
